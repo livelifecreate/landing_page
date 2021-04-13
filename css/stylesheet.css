@@ -1,0 +1,419 @@
+.container  {
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    z-index: 10;
+    display: block;
+    background-color: rgb(243, 241, 241);
+
+}
+
+.clear::after {
+    content:"";
+    clear: both;
+    display: block;
+}
+.header-left {
+    float: left;
+}
+
+
+
+h1 {
+    font-family: serif;
+    font-size: 20px;
+    padding: 24px;
+}
+.header-right {
+    float: right;
+}
+
+.menu-item {
+    float: left;
+    padding: 10.5px 0px;
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+
+.slider {
+    height: 700px;
+    background-image: url(../img/computer-2242263_1920.jpg);
+    background-position: 0px 72px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h2 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    display: block;
+    font-family: serif, Source Sans Pro, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.title-c {
+    color: rgb(199, 3, 3);
+}
+
+.content-title {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;  
+    opacity: 0.7;  
+}
+
+.content-title:hover {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.content-detail {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.content-detail:hover {
+    opacity: 1;
+    /* font-weight: bold; */
+    transition: all 1s;
+}
+
+h3 {
+    line-height: 2;
+    font-size: 14px;
+}
+
+/* ======================
+文字をフワッと出すアニメーション 
+======================*/
+.fade-in01{ 
+    font-size:40px;
+    opacity:0;
+    animation-name: sample01; 
+    animation-duration: 7s; 
+    animation-iteration-count:1;
+    animation-fill-mode: forwards; 
+  }
+  @keyframes sample01 {
+  0% {
+    opacity: 0;
+    color: white;
+    font-size: 50px;
+  }
+  90% {
+   opacity: 1;
+   color: white;
+   font-size: 50px;
+  }
+   100% {
+    opacity: 1;
+    color: white;
+    font-size: 50px;
+  } 
+  }
+
+  .fade-in02{ 
+    font-size:20px;
+    opacity:0;
+    animation-name: sample02; 
+    animation-duration: 12s; 
+    animation-iteration-count:1;
+    animation-fill-mode: forwards; 
+  }
+  @keyframes sample02 {
+  0% {
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+  }
+  90% {
+   opacity: 1;
+   color: white;
+   font-size: 20px;
+  }
+   100% {
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+  } 
+  }
+
+  .main-message {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-family: serif, Source Sans Pro, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.main-msg-item {
+    color: rgb(74, 207, 201);
+    font-size: 22px;
+}
+
+/* ======================
+works 
+======================*/
+.works {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.works-left {
+    float: left;
+    width: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.works-img {
+    width: 90%;
+}
+
+.works-img:hover {
+    width: 95%;
+    transition: all 1.5s;
+}
+
+.works-right {
+    float: right;
+    width: 50%;
+    margin-top: 100px;
+}
+
+#works {
+    padding-top: 100px;
+    margin-top:-100px;
+}
+/* ======================
+about 
+======================*/
+
+.about {
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about-left {
+    float: left;
+    width: 50%;
+    margin-top: 150px;
+}
+
+.about-right {
+    float: right;
+    width: 40%;
+}
+
+.about-img {
+    width: 90%;
+    padding-top: 0px;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+.about-img:hover {
+    width: 95%;
+    transition: all 1.5s;
+}
+
+#about {
+    padding-top: 300px;
+    margin-top:-300px;
+}
+
+.service {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(243, 241, 241);
+}
+
+#service {
+    padding-top: 50px;
+    margin-top:-50px;
+}
+
+.portfolio {
+    padding-bottom: 50px;
+}
+
+#portfolio ß{
+    padding-top: 100px;
+    margin-top:-100px;
+}
+
+.card-img-top:hover {
+    opacity: 0.7;
+}
+footer {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    text-align: center;
+    line-height: 5;
+}
+
+
+
+/* ======================
+スマホ用表示
+======================*/
+@media only screen and (max-width:767px) {
+/* ======================
+header
+======================*/
+
+
+.navbar-toggler {
+    margin-right: 0;
+    margin-top: 8px;
+
+}
+
+
+
+.slider {
+    height: 350px;
+}
+
+h2 {
+    top: 22%;
+    padding-left: 25%;
+    width: 100%;
+}
+
+.main-message {
+    top: 30%;
+    padding-left: 5%;
+    width: 75%;
+    font-size: 12px;
+    text-align: center;
+}
+.fade-in01 {
+    font-size:20px;
+    opacity:0;
+    animation-name: sample01; 
+    animation-duration: 7s; 
+    animation-iteration-count:1;
+    animation-fill-mode: forwards; 
+    
+}
+
+@keyframes sample01 {
+    0% {
+      opacity: 0;
+      color: white;
+      font-size: 30px;
+    }
+    90% {
+     opacity: 1;
+     color: white;
+     font-size: 30px;
+    }
+     100% {
+      opacity: 1;
+      color: white;
+      font-size: 30px;
+    } 
+    }
+
+    .fade-in02{ 
+        font-size:20px;
+        opacity:0;
+        animation-name: sample02; 
+        animation-duration: 8s; 
+        animation-iteration-count:1;
+        animation-fill-mode: forwards; 
+      }
+      @keyframes sample02 {
+      0% {
+        opacity: 0;
+        color: white;
+        font-size: 14px;
+      }
+      90% {
+       opacity: 1;
+       color: white;
+       font-size: 14px;
+      }
+       100% {
+        opacity: 1;
+        color: white;
+        font-size: 14px;
+      } 
+      }
+    
+      .main-msg-item {
+        color: rgb(74, 207, 201);
+        font-size: 16px;
+    }
+
+
+.menu-item {
+    padding: 0 0;
+    margin-left: 3px;
+    margin-top: 0;
+    width: 15px;
+}
+.works-left {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+.works-right {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+.about-left {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.about-right {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.about {
+    margin-top: 0;
+}
+
+.content-detail {
+    font-size: 12px;
+}
+.navbar {
+    padding: 0 0;
+}
+
+
+
+}
+
+
+
+
+
+
+
