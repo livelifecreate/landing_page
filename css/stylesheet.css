@@ -386,6 +386,13 @@ h2 {
     width: 15px;
 }
 
+    h2 {
+    padding-top: 30px;
+}
+
+h3 {
+    padding-top: 50px;
+}
 
 .works-left {
     float: none;
